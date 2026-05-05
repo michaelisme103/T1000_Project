@@ -1,0 +1,56 @@
+{
+  "system": {
+    "hostname": "t1000",
+    "volume": 50,
+    "brightness": 80,
+    "theme": "dark",
+    "debug_mode": true
+  },
+  "obd2": {
+    "enabled": true,
+    "port": "/dev/ttyUSB0",
+    "baudrate": 38400,
+    "logging_interval": 5,
+    "connection_timeout": 10
+  },
+  "camera": {
+    "enabled": true,
+    "device": "/dev/video0",
+    "resolution": [720, 480],
+    "fps": 30,
+    "rolling_segment_minutes": 30,
+    "max_stored_hours": 1,
+    "recording_path": "logs/rolling_footage"
+  },
+  "audio": {
+    "use_mpd": false,
+    "mpd_host": "localhost",
+    "mpd_port": 6600,
+    "default_volume": 50
+  },
+  "network": {
+    "wifi_router_ip": "192.168.1.1",
+    "static_ip_enabled": false,
+    "static_ip": "192.168.1.100"
+  },
+  "gpio": {
+    "reverse_signal_pin": 17,
+    "use_gpio": false,
+    "gpio_mode": "BCM"
+  },
+  "logging": {
+    "enabled": true,
+    "log_file": "logs/t1000.log",
+    "log_level": "DEBUG",
+    "max_log_size_mb": 50
+  },
+  "fuel_tracking": {
+    "manual_entry_enabled": true,
+    "calculation_method": "manual"
+  },
+  "display": {
+    "resolution": [1280, 800],
+    "fullscreen": false,
+    "keyboard_controls_enabled": true
+  }
+}

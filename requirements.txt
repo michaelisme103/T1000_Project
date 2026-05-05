@@ -1,0 +1,10 @@
+# Heavy packages installed via apt (pre-built for ARM):
+#   sudo apt-get install -y python3-kivy python3-numpy python3-opencv python3-matplotlib python3-psutil
+#
+# Pip installs only lightweight pure-Python packages:
+pyyaml
+requests
+python-mpd2
+gps3
+pytest
+pytest-cov
